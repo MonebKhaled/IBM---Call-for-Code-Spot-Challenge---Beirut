@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<link rel="stylesheet" href="index.css">
+        <meta charset="UTF-8">
+        <meta name="description" content=" Al wasal connect log in">
+        <meta name="author" content="CIG">
+        <meta name="keywords" content="Al wasal connect,help Beirut,Al wasal connect log in">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Change Is Good</title>
+		<link rel="shortcut icon" href="icon.ico"/>
+    </head>
+	<body style="background-image: url(back.jpg);">
+		<div><img src="ibm-ar21.svg"/>
+		<form >
+			<select id="lang" onchange="window.location.href=this.value;">
+				<option value="index.html">English</option>
+				<option value="arabic.html">العربية</option>
+			</select>
+		</form>
+		</div>
+		<div class ="form-box">	
+			<div class="user-log-in">User Login</div>
+			<div class="image_01"><a href="index.html"><img src="img-01.png" width="280px"/></a></div>
+			<a href="..\Donate\donate.html">
+			<div >
+			<button type="button" class="toggle-btn_donate"> Lend A Hand </button></div></a>
+			<form class="input-group" action="../Dashboard/homepage.html">
+				<input type="text" class="input-field"  placeholder="Username" required>
+				<input type="password" class="input-field" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 to 16 characters"placeholder="Password" required>
+				<input type="checkbox" class="check-box"><span>Remember Password                                   <a href="resetpassword.html" class="forgetpassword">Reset password</a></span>
+				<button type="submit" class="submit-btn"> Log In </button>
+			</form>
+			<div ><a href="..\Register\register.html" class="cannot-login">Don't have an account? Register now</div></a>
+			<div><a href="gov-login.html" class="gover">Goverment log-in</div></a>
+		</div>
+	</body>
+</html>

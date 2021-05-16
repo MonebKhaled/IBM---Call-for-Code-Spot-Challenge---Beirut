@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<link rel="stylesheet" href="donategoods.css">
+        <meta charset="UTF-8">
+        <meta name="description" content=" ">
+        <meta name="author" content="CIG">
+        <meta name="keywords" content=" ">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Change Is Good</title>
+		<link rel="shortcut icon" href="icon.ico"/>
+    </head>
+	<body style="background-image: url(back.jpg);">
+		<div><img src="ibm-ar21.svg"/>
+		<form >
+			<select id="lang" onchange="window.location.href=this.value;">
+				<option value="donategoods.html">English</option>
+				<option value="donategoods-ar.html">العربية</option>
+			</select>
+		</form>
+		</div>
+		<div class ="form-box">	
+			<div class="Donate_goods">Donate goods</div>
+            <div class="image_01"><a href="..\Login\index.html"><img src="img-01.png" width="280px"/></div></a>
+            <form class="input-group" action="thanks2.html">
+				<div class="pick " >Self delivery:</div>
+				<div class="pick_up" >Click on <a href="map.html"><img class="google" src="google.png" width="35" height="35" ></a> for centers locations</div>
+				<div  style="color: white; font-size: 20px;"><img src="1D_line.svg" class="line" height="9" width="155" >or<img src="1D_line.svg" class="line"  height="9" width="155"></div><div>
+				<div class="pick ">Pick up:<span style="color: white;"> fill the info below</span></div>
+				<input type="text" class="input-field" onkeypress='return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || (event.charCode == 32))' pattern="[A-Za-z]{2,50}" title="Only alphabet"placeholder="First name" required>
+                <input type="text" class="input-field" onkeypress='return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || (event.charCode == 32))' pattern="[A-Za-z]{2,50}" title="Only alphabet"placeholder="Last name" required>
+                <input type="text" class="input-field" onkeypress='return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || (event.charCode == 32))' pattern="[A-Za-z]{2,50}" title="Only alphabet"placeholder="City" required>
+                <input type="text" class="input-field"  placeholder="Address" required>
+                <input type="tel" class="input-field"   pattern="[0-9,+]{7,13}" oninput="this.value = this.value.replace(/[^0-9.+]/g, '');" title="Only numbers without(-)" maxlength="13"placeholder="Phone number"  required>
+				<input type="email" class="input-field" pattern="[A-Za-z0-9._%+-]{3,}@[a-zA-Z]{3,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,})" placeholder="Email"  required>
+				<p class="bag"> bag type</p>
+				<input type="checkbox" class="check-box" name="dt"  required><span class="bag">Food</span>
+				<input type="checkbox" class="check-box" name="dt"  required><span class="bag">Clothes</span>
+				<input type="checkbox" class="check-box" name="dt"  required><span class="bag">Medicine</span>
+				<input type="checkbox" class="check-box" name="dt"  required><span class="bag">Materials</span>
+				<!--<select class="select-" id=goodstype style="color: white;" multiple size="4" title="you can select more than one by clicking the 'ctrl' key"  required>
+				 	<option placeholder="bagType" title="bagType">Type of bag</option>
+					<option value="food">Food</option>
+					<option value="food">Clothes</option>
+					<option value="food">Medicine</option>
+					<option value="food">Materials</option>
+				</select>-->
+                <br><br>
+				<button type="submit" class="submit-btn"> Submit  </button>
+			</form>
+	    </div>
+	</body>
+</html>

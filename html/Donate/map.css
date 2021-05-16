@@ -1,0 +1,73 @@
+.form-box
+{
+    width:900px;
+    height:700px;
+    position:relative;
+    margin: auto;
+    background: linear-gradient(rgb(70, 87, 101,0.7),rgb(70, 87, 101,0.7));
+    padding: 5px;
+    box-shadow: 3px 3px 3px 3px rgb(70, 87, 101,0.2);
+    border-radius: 30px;
+}
+
+.Donate_goods
+{
+    margin-left: auto;
+    position: relative;
+    top: 25px;
+    left: 370px;
+    font-size: 27px;
+    color: white;
+}
+.mapouter
+{
+    margin: auto;
+    position:relative;
+    text-align:right;
+    top: 50px;
+    height:530px;
+    width:750px;
+}
+.gmap_canvas 
+{
+    overflow:hidden;
+    background:none !important;
+    height:530px;
+    width:750px;
+}
+#lang
+{
+    background-color: transparent;
+    color: white;
+    top: 0;
+    right: 0;
+    position: absolute;
+    margin: auto;
+    border-radius: 10px;
+    border: 0;
+}
+.submit-btn
+{
+    margin: auto;
+    position: relative;
+    top: 70px;
+    padding: 11px 30px;
+    cursor: pointer;
+    border-radius: 30px;
+    background: transparent;
+    display: block;
+    color: white;
+    font-size: 25px;
+    border: 0.5px solid white;
+    text-decoration: underline;
+    text-decoration: transparent;
+}
+
+.submit-btn:hover
+{
+    border: 0.5px solid rgb(70, 87, 101,0.5);
+    background: linear-gradient(to left, rgba(81, 203, 238, 1), rgba(81, 203, 238, 1));
+    color: white;
+    box-shadow: 1px 1px rgb(70, 87, 101,0.2);
+    transition: all .6s;    
+}

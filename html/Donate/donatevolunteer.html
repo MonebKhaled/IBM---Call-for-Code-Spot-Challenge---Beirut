@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<link rel="stylesheet" href="donatevolunteer.css">
+        <meta charset="UTF-8">
+        <meta name="description" content=" volunteeing in beirut">
+        <meta name="author" content="CIG">
+        <meta name="keywords" content="volunteer for beirut,volunteering in lebanon ">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Change Is Good</title>
+		<link rel="shortcut icon" href="icon.ico"/>
+    </head>
+	<body style="background-image: url(back.jpg);">
+		<div><img src="ibm-ar21.svg"/>
+		<form >
+			<select id="lang" onchange="window.location.href=this.value;">
+				<option value="donatevolunteer.html">English</option>
+				<option value="donatevolunteer-ar.html">العربية</option>
+			</select>
+		</form>
+		</div>
+		<div class ="form-box">	
+			<div class="Volunteer"> Volunteer </div>
+            <div class="image_01"><a href="..\Login\index.html"><img src="img-01.png" width="280px"/></a></div>
+            <form class="input-group" action="thanks2.html" >
+				<input type="text" class="input-field"  pattern="[A-Za-z]{2,50}" title="Only alphabet" onkeypress='return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || (event.charCode == 32))'placeholder="First name" required>
+                <input type="text" class="input-field"  pattern="[A-Za-z]{2,50}" title="Only alphabet" onkeypress='return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || (event.charCode == 32))'placeholder="Last name" required>
+                <input type="tel" class="input-field"   pattern="[0-9,+]{7,13}" title="Only numbers" maxlength="13" oninput="this.value = this.value.replace(/[^0-9+]/g, '');"placeholder="Phone number"  required>
+                <input type="email" class="input-field" pattern="[A-Za-z0-9._%+-]{3,}@[a-zA-Z]{3,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,})" placeholder="Email" required>
+                <input type="text" class="input-field" onkeypress='return ((event.charCode >= 65 && event.charCode <= 90) || (event.charCode >= 97 && event.charCode <= 122) || (event.charCode == 32))'  placeholder="What would you like to help with ? " required>
+                <br><br>
+				<button type="submit" class="submit-btn"><big> Submit </big> </button>
+				
+			</form>
+	    </div>
+	</body>
+</html>

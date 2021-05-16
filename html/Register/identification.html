@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<link rel="stylesheet" href="identification.css">
+        <meta charset="UTF-8">
+        <meta name="author" content="CIG">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Change Is Good</title>
+		<link rel="shortcut icon" href="icon.ico"/>
+    </head>
+	<body style="background-image: url(background.jpg);">
+		<div><img src="ibm-ar21.svg"/>
+		<form >
+			<select id="lang" onchange="window.location.href=this.value;">
+				<option value="identification.html">English</option>
+				<option value="identification-ar.html">العربية</option>
+			</select>
+		</form>
+		</div>
+		<div class ="form-box" >	
+			<div class="abc">Identification</div>
+            <div class="image_01"><a href="..\Login\index.html"><img src="img-01.png" width="280px" /></a></div>
+            <form class="input-group" action="makesure.html">
+                <input type="text" class="input-field"placeholder="Social Security Number"pattern="[0-9]{9}" title="Only numbers" maxlength="9" required>
+                <br><br>
+                <button type="submit" class="submit-btn"><big> Submit </big> </button>
+            </form>
+            <a href="otherinfo.html">
+                <div class="nossn">No Social Security Number?</div></a>
+	    </div>
+	</body>
+</html>

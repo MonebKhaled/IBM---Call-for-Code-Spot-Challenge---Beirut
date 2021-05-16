@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<link rel="stylesheet" href="register.css">
+        <meta charset="UTF-8">
+        <meta name="description" content=" ">
+        <meta name="author" content="CIG">
+        <meta name="keywords" content=" ">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Change Is Good</title>
+		<link rel="shortcut icon" href="icon.ico"/>
+    </head>
+	<body style="background-image: url(background.jpg);">
+		<div><img src="ibm-ar21.svg"/>
+		<form >
+			<select id="lang" onchange="window.location.href=this.value;">
+				<option value="register.html">English</option>
+				<option value="register-ar.html">العربية</option>
+			</select>
+		</form>
+		</div>
+		<div class ="form-box">	
+			<div class="abc">Register Citizen</div>
+            <div class="image_01"><a href="..\Login\index.html"><img src="img-01.png" width="280px"/></a></div>
+            <form class="input-group" action="identification.html" >
+                <input type="text" class="input-field"  placeholder="Username" required>
+                <input type="email" class="input-field" placeholder="Email" pattern="[A-Za-z0-9._%+-]{3,}@[a-zA-Z]{3,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,})" required>
+                <input type="password" id="password" class="input-field" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 to 16 characters" placeholder="Password" required>
+                <input type="password" id="confirm_password" class="input-field" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,16}" placeholder="Confirm Password" required>
+				<br><br>
+				<button type="submit" class="submit-btn" ><big> Create Account </big> </button></a>
+			</form>
+	    </div>
+	</body>
+</html>
+<script>
+var password = document.getElementById("password"), confirm_password = document.getElementById("confirm_password");
+  
+  	function validatePassword()
+	{
+		if(password.value != confirm_password.value) 
+		{
+			confirm_password.setCustomValidity("Passwords Don't Match");
+		} 
+		else 
+		{
+			confirm_password.setCustomValidity('');
+		}
+  	}
+  
+    password.onchange = validatePassword;
+    confirm_password.onkeyup = validatePassword;
+  </script>

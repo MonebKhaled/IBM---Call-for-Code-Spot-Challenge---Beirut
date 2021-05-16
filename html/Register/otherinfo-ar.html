@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<link rel="stylesheet" href="otherinfo.css">
+        <meta charset="UTF-8">
+        <meta name="author" content="CIG">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Change Is Good</title>
+        <link rel="shortcut icon" href="icon.ico"/>
+  
+
+    </head>
+	<body style="background-image: url(background.jpg);">
+		<div><img src="ibm-ar21.svg"/>
+		<form >
+            <select id="lang" onchange="window.location.href=this.value;">
+                <option value="otherinfo-ar.html">العربية</option>
+				<option value="otherinfo.html">English</option>
+			</select>
+		</form>
+		</div>
+		<div class ="form-box">	
+            <div class="abc-ar">الهوية</div>
+            <div class="image_01"><a href="..Login\arabic.html"><img src="img-01.png" width="280px"/></a></div>
+            <form class="input-group">
+                <input type="tel" class="input-field"   pattern="[0-9,+]{7,13}" title="Only numbers" maxlength="13" oninput="this.value = this.value.replace(/[^0-9+]/g, '');" placeholder="رقم الهاتف"  required>
+                <input type="email" class="input-field" placeholder="بريد إلكتروني تم التحقق منه" pattern="[A-Za-z0-9._%+-]{3,}@[a-zA-Z]{3,}([.]{1}[a-zA-Z]{2,}|[.]{1}[a-zA-Z]{2,}[.]{1}[a-zA-Z]{2,})" required>
+                <input type="text" class="input-field"  placeholder="(أي معلومات مهمة (مثل: الأسماء الكاملة،رقم الهوية الذي تم التحقق منه" required>
+                <p style="color: white;">أي وثائق تم التحقق منها</p>
+                <input type="file" style="color: white;" accept=".jpeg,.jpg,.png,.pdf,.doc" required>
+                <br><br>
+                <button type="submit" class="submit-btn"><big> إرسال </big> </button>
+            </form>
+        </div>
+	</body>
+</html>
